@@ -1,0 +1,952 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Thoughts on Nematic Order in Embryonic Morphogenesis
+\end_layout
+
+\begin_layout Author
+Laurent MacKay
+\end_layout
+
+\begin_layout Section
+Causes of apparent nematic order in living tissue
+\end_layout
+
+\begin_layout Standard
+Nematic order arises from neighbour-neighbour interactions between rigid
+ rod-like particles, producing long range orientational order.
+ In 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kemkemer2000"
+literal "false"
+
+\end_inset
+
+, a mean-field approach is used to derive a distortional energy for a cellular
+ orientation field that is equivalent to the classical free energy appearing
+ nematic hydrodynamics equations.
+\end_layout
+
+\begin_layout Paragraph
+Evidence
+\end_layout
+
+\begin_layout Enumerate
+In cultures of elongated cells, neighbour-neighbour interactions are to
+ be expected and indeed there is often long-range orientational order in
+ such cultures:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Densely-packed neural progenitor cells in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kawaguchi2017"
+literal "false"
+
+\end_inset
+
+ have a degree of orientational order, which persists on the order of 10
+ cell lengths.
+ Based on their observations at low densities, it seems likely that the
+ interaction is primarily mechanical (e.g., through hydrostatic pressure).
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Similar cultures of NIH 3T3 cells show exquisite nematic ordering 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Duclos2016"
+literal "false"
+
+\end_inset
+
+, where the steady-state position of +1/2 defects in circularly confined
+ domains is very well predicted by passive nematic theory.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Loosely-packed melanocytes interact, primarily biochemically via their dendrites
+, to produce a high degree of orientational order 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gruler1999"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+Complication
+\end_layout
+
+\begin_layout Enumerate
+However, unlike in nematic phases of actual liquid crystals, cells can change
+ shape quite drastically and will almost certainly do so when dividing.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Changes in density due to cell division have been suggested to enchance
+ (reduce) topological defects in extensile (contractile) models of active
+ nematics 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Doostmohammadi2015"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Even within the same culture there may be regions where cells are significantly
+ more elongated than others (e.g., center vs.
+ tips of the 
+\begin_inset Quotes eld
+\end_inset
+
+plus
+\begin_inset Quotes erd
+\end_inset
+
+-shaped culture in Fig.
+ 4a in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Saw2017"
+literal "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+I currently do not know how we could account for this variable cell shape
+ within the framework of nematic hydrodynamics, but its possible that there
+ is a way to do it.
+ (Ask Jimmy about this).
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+An interesting microscopic/Hamiltonian-based model can be found in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Pai2016"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+The formalism in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kemkemer2000"
+literal "false"
+
+\end_inset
+
+ would be also be good place to start for deriving one.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Effects of Nematic Order
+\end_layout
+
+\begin_layout Standard
+Assuming that nematic hydrodynamics are indeed at play during tissue morphogenes
+is, what can be expected as a meaningful outcome of such nematic order for
+ a developping organism? Two ideas come to mind:
+\end_layout
+
+\begin_layout Enumerate
+Orientational order can guide the flow of cells.
+ If a topological defect can be positioned consistently within an embryo,
+ this may be a way for the organism to organise its tissue (e.g., hydra).
+\end_layout
+
+\begin_layout Enumerate
+Accumulation of cells at topolgical defects due to local differences in
+ stress/velocity.
+\end_layout
+
+\begin_layout Subsection
+Suggestive Experimental Results
+\end_layout
+
+\begin_layout Standard
+Below is a non-exhaustive list of experimental studies that show some evidence
+ for the biological-relevance of topological defects.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="6cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Defect
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Biological Effect
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Source
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cell-Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Note
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++1/2 (-1/2)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+increasing (decreasing) density
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kawaguchi2017"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NPC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+unclear what the biological relevance is
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++1/2 (-1/2)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+new layer (hole) formation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Copenhagen2020"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Myxococcus xanthus (Soil Bacteria)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++1/2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+apoptotic extrusion
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Saw2017"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MDCK
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+See 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Critical-analysis-of"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+development of cellular mounds
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Guillamat2020"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C2C12 myoblasts
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+proposed to be reminscent of myotubule formation which C2C12 cells are capable
+ of forming
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+formation of an oriented 
+\begin_inset Quotes eld
+\end_inset
+
+cluster
+\begin_inset Quotes erd
+\end_inset
+
+ of cells
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kemkemer2000"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Migrating granulocytes surrounding immobile monocytes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Spontaneously occurs at low cell density when extracellular Ca2+ is lowered
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Critical analysis of the link between +1/2 defects and apoptotic extrusion
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Critical-analysis-of"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In Saw2017, it is suggested that apoptotic extrusion is induced by the high
+ compressive stresses that develop at the heads of +1/2 topological defects
+ in monocultures of MDCK cells.
+ While their quantitative analysis is very convincing at establishing a
+ correlation between high compressive stress and apoptotic extrusion, I
+ have two major issues with the line of reasoning that leads them to draw
+ a causal link.
+\end_layout
+
+\begin_layout Enumerate
+Use of caspase-3 as a marker for apoptosis.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Caspase-3 acts as an executioner, shredding the cytoskeleton to allow for
+ extrusion following loss of mechanical integrity.
+ This causes the cell to be pushed out of the plane by its neighbours (see
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Miroshnikova2017"
+literal "false"
+
+\end_inset
+
+ for a similar situation with less deadly results).
+ Caspase-3 activation occurs around 2-8 hours (typically 5+ hours) after
+ the mechanical induction of apoptosis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Maeno2006,Lee2010"
+literal "false"
+
+\end_inset
+
+, while other caspase-independent pathways activate in tens of minutes 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Pelling2009"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Thus, caspase-3 seems a poor choice of marker for tracking apoptotic cells
+ prior to extrusion.
+\end_layout
+
+\begin_layout Itemize
+Given the flow of the monolayer (see Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nematic_flow_and_extrusion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) and the timescale of the experiments, it seems likely that apoptosis can
+ be initiated far from the +1/2 defect.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A closer analysis of stress field and cellular movements do not support
+ a causal relationship.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The data shown in Fig.
+ 3b, Extended Data Fig.
+ 1i, and Extended Data Fig.
+ 3e suggest correlations between compressive forces and extrusion.
+ N.B.
+ that Extended Data Fig.
+ 3e clearly shows that extrusion is not limited to regions of compressive
+ forces, the way the data is presented in Fig.
+ 3b obscures such facts.
+\end_layout
+
+\begin_layout Itemize
+By performing visual cell tracking on the supplemental movies, the causal
+ link starts to fall apart.
+\end_layout
+
+\begin_layout Itemize
+The region with high compressive forces slowly grows in size over time (see
+ green lines in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nematic_flow_and_extrusion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), but it seems that the extruded cell only enters this region just prior
+ to extrusion (see note 1 in this subsection).
+ Also, why do none of the other cells in this region get extruded?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cell_and_defect_flow.png
+	display false
+	width 14cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Motion of an extruded cell (red line) and a +1/2 topological defect (blue
+ symbols), with extrusion (yellow symbol) occuring roughly where the two
+ trajectories meet.
+ Note that the region of the culture which develops high compressive forces
+ (green lines) over time barely overlaps with the cell's trajectory.
+ Panels from left to right are taken at 160, 30, and 0 min prior to extrusion,
+ respectively.
+ Adapted from 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Saw2017"
+literal "false"
+
+\end_inset
+
+ by visual comparion of Fig.
+ 1d and Supplemental Movie 4.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nematic_flow_and_extrusion"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The proposed biological mechanism was not shown to actually be occuring
+ in their cultures (i.e., compression > YAP in cytoplasm > caspase-3 activation
+ > extrusion).
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+If YAP sequestering in the cytoplasm is indeed the causal link between compressi
+ve forces and apoptosis, why did they never try to directly correlate YAP
+ distribution with compressive forces experienced by a cell? Even better,
+ force-history of the individual cells?
+\end_layout
+
+\begin_layout Itemize
+Instead they correlate YAP distribution with proximity to +1/2 defect head,
+ which is in turn correlated with high compressive force (but note that
+ there is also a high-tensile region adjacent to the head as well).
+ Correlation twice removed is preliminary evidence, but needs further investigat
+ion before claiming causality (e.g., YAP distribution can also be manipulated
+ via the Hippo biochemical pathway 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Boopathy2019"
+literal "false"
+
+\end_inset
+
+, so one cannot conclude that a cytoplamsic YAP distribution implies mechanical
+ compression).
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+On the other hand, compressive forces 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sim$
+\end_layout
+
+\end_inset
+
+10x higher than reported in Saw2017 have been shown to induce apoptosis,
+ albeit in a very stochastic and time-delayed manner 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Liu2019"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+It seems more plausible that cells become apoptotic more-or-less at random
+ (possibly due to mechanical force), and then something causes them to move
+ preferentially towards +1/2 defects.
+ If there really is such a honing mechanism for apoptotic cells, they would
+ have plenty of time to do so (i.e., 5+ hours) before caspase activity is
+ detected.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Outlook
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "nematics"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
